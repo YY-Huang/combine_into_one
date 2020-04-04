@@ -27,12 +27,8 @@ const readFiles = fs.readdir(directoryPath, function(err, items) {
 			if (!found) {
 				result.push(line);
 			}
-			// console.log('Individual file: ' + individualFile);
-			// console.log('Line is : ' + line);
-			// console.log('result is : ' + result);
-			//console.log(result);
             
-			// Uses merge-sort by default so it would be n log n
+			// Uses merge-sort by default so it would be n log n on large input and insertion sort on small input (<10)
 			result.sort();
             
 			const fileResult = fs.createWriteStream('result.txt');
