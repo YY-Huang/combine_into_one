@@ -23,8 +23,13 @@ If each file was not organized, each file would have to organize it's contents
 I would have to create a readStream on each file and re-write it's contents and sort them.
 
 Create temporary holders (i.e. empty strings) to hold x amount of data to match x files (to represent each file's first line)
+
 (i.e. str1 - to represent file1, str2 to represent file2, str3 to represent fil3, etc)
+
 Make comparisons with each different data holders 
+
 Whichever one is on the less side of organization, you will push that string to a list/array to hold - []
+
 Reset that current string to read the next line of that file it holds
+
 So this can be in a while loop before the createStream reaches the end of the file
